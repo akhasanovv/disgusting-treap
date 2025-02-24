@@ -309,7 +309,7 @@ void next_permutation(int l, int r) {
         cur = cur->l;
     }
 
-    auto [l1, r1] = split(v, ql);
+    auto [l1, r1] = split(v, lft);
     auto [swap1, other] = split(r1, 1);
 
     auto [l_other, r_other] = value_split1(other, swap1->value);
